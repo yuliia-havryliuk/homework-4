@@ -56,6 +56,7 @@ function task2() {
     for (let i = 1; i <= 1000; i++) {
         if (i % 3 === 0 || i % 5 === 0) {
             n = i + n
+            console.log(n)
         }
     }
     alert(`The sum of numbers is equal to = ${n}`)
@@ -75,11 +76,11 @@ function task2() {
 
 function task3() {
     let q = '*'
-    let emptyStr = ''
+    let str = ''
+    let emptyStr = ' '
     for (let i = 0; i < 5; i++) {
-        emptyStr = emptyStr + q + ' '
-        console.log(emptyStr)
+        str = str + q + emptyStr
+        document.write(`${str}<br/><br/>`)
     }
-    alert('Answer in console :)')
 }
 
